@@ -1,29 +1,65 @@
+body {
+  background-color: lightblue;
+}
 .container {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: 1px solid black;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 12px 22px 0.5px #95bdc9;
   display: block;
   margin: 0 auto;
-  max-width: 600px;
-  padding: 30px;
+  margin-top: 30px;
+  max-width: 70%;
+  padding: 10px;
+  background-color: white;
+  color: darkblue;
 }
-header {
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+img {
+  max-height: 30px;
+}
+h1 {
   display: block;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  font-size: 35px;
 }
 .selectCity {
   display: block;
   margin: 0 auto;
-  font-size: larger;
+  font-size: 18px;
+  width: 80%;
+  padding: 8px;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #c3ebf7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: darkblue;
+  margin-bottom: 20px;
+}
+option {
+  background-color: white;
 }
 .citySection {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .leftSide {
   line-height: 0.5;
 }
-.rightSide .city {
+.rightSide {
+}
+.city {
 }
 .date {
 }
@@ -33,4 +69,19 @@ footer {
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin-top: 50px;
+}
+p {
+  color: darkblue;
+  text-decoration: none;
+  font-size: smaller;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+a:hover {
+  cursor: pointer;
+  color: skyblue;
+}
+a:visited {
+  color: skyblue;
 }
