@@ -1,43 +1,49 @@
 function updateTimeDate() {
   //greenwich
   let greenwichElement = document.querySelector("#greenwich");
-  let greenwichDateElement = greenwichElement.querySelector(".date");
-  let greenwichTimeElement = greenwichElement.querySelector(".time");
-  let greenwichBaseTime = moment().tz("Greenwich");
+  if (greenwichElement) {
+    let greenwichDateElement = greenwichElement.querySelector(".date");
+    let greenwichTimeElement = greenwichElement.querySelector(".time");
+    let greenwichBaseTime = moment().tz("Greenwich");
 
-  greenwichDateElement.innerHTML = greenwichBaseTime.format("MMMM Do YYYY");
-  greenwichTimeElement.innerHTML = greenwichBaseTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+    greenwichDateElement.innerHTML = greenwichBaseTime.format("MMMM Do YYYY");
+    greenwichTimeElement.innerHTML = greenwichBaseTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
   //boston
   let bostonElement = document.querySelector("#boston");
-  let bostonDateElement = bostonElement.querySelector(".date");
-  let bostonTimeElement = bostonElement.querySelector(".time");
-  let bostonBaseTime = moment().tz("America/New_York");
+  if (bostonElement) {
+    let bostonDateElement = bostonElement.querySelector(".date");
+    let bostonTimeElement = bostonElement.querySelector(".time");
+    let bostonBaseTime = moment().tz("America/New_York");
 
-  bostonDateElement.innerHTML = bostonBaseTime.format("MMMM Do YYYY");
-  bostonTimeElement.innerHTML = bostonBaseTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+    bostonDateElement.innerHTML = bostonBaseTime.format("MMMM Do YYYY");
+    bostonTimeElement.innerHTML = bostonBaseTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
   //phoenix
   let phoenixElement = document.querySelector("#phoenix");
-  let phoenixDateElement = phoenixElement.querySelector(".date");
-  let phoenixTimeElement = phoenixElement.querySelector(".time");
-  let phoenixBaseTime = moment().tz("America/Phoenix");
+  if (phoenixElement) {
+    let phoenixDateElement = phoenixElement.querySelector(".date");
+    let phoenixTimeElement = phoenixElement.querySelector(".time");
+    let phoenixBaseTime = moment().tz("America/Phoenix");
 
-  phoenixDateElement.innerHTML = phoenixBaseTime.format("MMMM Do YYYY");
-  phoenixTimeElement.innerHTML = phoenixBaseTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+    phoenixDateElement.innerHTML = phoenixBaseTime.format("MMMM Do YYYY");
+    phoenixTimeElement.innerHTML = phoenixBaseTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.replace();
   let cityTime = moment().tz(cityTimeZone);
-  let citiesElement = document.querySelector("#cities");
+  let citiesElement = document.querySelector(".cities");
   citiesElement.innerHTML = `
         <div class="citySection"
           <div class="leftSide">
