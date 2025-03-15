@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -24,40 +26,33 @@
         <option value="">New Orleans, USA</option>
       </select>
 
-      <div class="citySection">
+      <div class="citySection" id="greenwich">
         <div class="leftSide">
-          <h2 class="city">City</h2>
-          <h3 class="date">Date</h3>
+          <h2 class="city">Greenwich</h2>
+          <h3 class="date">Date loading...</h3>
         </div>
         <div class="rightSide">
-          <h2 class="time">Time</h2>
+          <h2 class="time">Time loading...</h2>
         </div>
       </div>
-      <div class="citySection">
+
+      <div class="citySection" id="boston">
         <div class="leftSide">
-          <h2 class="city">City</h2>
-          <h3 class="date">Date</h3>
+          <h2 class="city">Boston</h2>
+          <h3 class="date">Date loading...</h3>
         </div>
         <div class="rightSide">
-          <h2 class="time">Time</h2>
+          <h2 class="time">Time loading...</h2>
         </div>
       </div>
-      <div class="citySection">
+
+      <div class="citySection" id="phoenix">
         <div class="leftSide">
-          <h2 class="city">City</h2>
-          <h3 class="date">Date</h3>
+          <h2 class="city">Phoenix</h2>
+          <h3 class="date">Date loading...</h3>
         </div>
         <div class="rightSide">
-          <h2 class="time">Time</h2>
-        </div>
-      </div>
-      <div class="citySection">
-        <div class="leftSide">
-          <h2 class="city">City</h2>
-          <h3 class="date">Date</h3>
-        </div>
-        <div class="rightSide">
-          <h2 class="time">Time</h2>
+          <h2 class="time">Time loading...</h2>
         </div>
       </div>
 
@@ -78,6 +73,7 @@
         </p>
       </footer>
     </div>
-    <script href="src/script.js"></script>
+
+    <script src="src/script.js"></script>
   </body>
 </html>

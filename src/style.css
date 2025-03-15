@@ -9,7 +9,7 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  max-width: 50%;
+  max-width: 500px;
   padding: 10px;
   background-color: white;
   color: darkblue;
@@ -50,8 +50,10 @@ option {
 }
 .citySection {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
+  margin-right: 50px;
+  margin-left: 50px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .leftSide {
